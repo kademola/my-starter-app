@@ -6,6 +6,7 @@ import Contact from "./components/contact/Contact";
 import Navigation from "./components/navigation/Navigation";
 import NotFoundPage from "./components/notfoundpage/NotFoundPage";
 import { Route, Switch } from "react-router-dom";
+import Jeopardy from "./components/jeopardy/Jeopardy";
 
 function App() {
   return (
@@ -20,7 +21,8 @@ function App() {
         <Route path="/clock" component={Clock} />
         <Route path="/contact" component={Contact} />
         <Route path="/welcome/:name" component={Welcome} />
-        <Route path="*" component={NotFoundPage} />
+        <Route path="/jeopardy" component={Jeopardy} />
+        <Route component={NotFoundPage} />
       </Switch>
     </div>
   );
